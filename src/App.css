@@ -1,38 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,700&display=swap");
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-image: url("../src/img/mesh.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
 .App {
+  padding: 20px;
+  border-radius: 15px;
+  width: 800px;
+  margin: 100px auto;
+  box-shadow: inset -12px -8px 40px #ff000020;
+  border: solid 0.01px #fff;
+}
+
+.pii {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.pii-items {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 700;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 20px;
 }
