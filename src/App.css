@@ -3,7 +3,6 @@
 body {
   font-family: "Ubuntu", sans-serif;
   background-image: url("../src/img/mesh.png");
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -11,10 +10,19 @@ body {
 
 .App {
   padding: 20px;
-  border-radius: 15px;
+  border-top-left-radius: 75px;
+  border-bottom-right-radius: 75px;
   width: 800px;
   margin: 100px auto;
-  box-shadow: inset -12px -8px 40px #ff000020;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  background: linear-gradient(
+    to right,
+    rgba(156, 38, 76, 0.3),
+    rgba(29, 38, 113, 0.4)
+  );
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
   border: solid 0.01px #fff;
 }
 
