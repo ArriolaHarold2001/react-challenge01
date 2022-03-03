@@ -12,30 +12,36 @@ class Search extends Component {
     return (
       <>
         <div className="search-section">
-          <input
-            placeholder="Enter First Name"
-            className="fName search"
-            type="text"
-            onChange={(e) => this.setState({ query: e.target.value })}
-          ></input>
-          <input
-            placeholder="Enter Last Name"
-            className="lName search"
-            type="text"
-            onChange={(e) => this.setState({ query: e.target.value })}
-          ></input>
-          <input
-            placeholder="Enter Phone Number"
-            className="mNumber search"
-            type="text"
-            onChange={(e) => this.setState({ query: e.target.value })}
-          ></input>
-          <input
-            placeholder="Enter Birthday"
-            className="birthday search"
-            type="text"
-            onChange={(e) => this.setState({ query: e.target.value })}
-          ></input>
+          <header class="main-header">
+            <h1>Search by:</h1>
+          </header>
+
+          <div class="input-flex">
+            <input
+              placeholder="First Name"
+              className="fName search"
+              type="text"
+              onChange={(e) => this.setState({ query: e.target.value })}
+            ></input>
+            <input
+              placeholder="Last Name"
+              className="lName search"
+              type="text"
+              onChange={(e) => this.setState({ query: e.target.value })}
+            ></input>
+            <input
+              placeholder="Phone Number"
+              className="mNumber search"
+              type="text"
+              onChange={(e) => this.setState({ query: e.target.value })}
+            ></input>
+            <input
+              placeholder="Birthday"
+              className="birthday search"
+              type="text"
+              onChange={(e) => this.setState({ query: e.target.value })}
+            ></input>
+          </div>
         </div>
 
         <div className="App">

@@ -8,6 +8,12 @@ body {
   color: #fff;
 }
 
+h1 {
+  text-align: center;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
 .pii {
   text-align: center;
   display: flex;
@@ -45,6 +51,7 @@ body {
 
 .search-section {
   display: flex;
+  flex-direction: column;
 
   justify-content: center;
   align-items: center;
@@ -59,14 +66,16 @@ body {
   padding: 20px;
   border-radius: 5px;
   border: none;
-  background: linear-gradient(
-    to right,
-    rgba(156, 38, 76, 0.5),
-    rgba(29, 38, 113, 0.5)
-  );
+  background-color: rgba(156, 38, 76, 0.2);
+
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
   font-weight: 700;
   font-size: 20px;
+}
+
+.input-flex {
+  display: flex;
+  gap: 20px;
 }
 
 .search[type="text"],
