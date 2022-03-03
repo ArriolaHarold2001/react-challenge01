@@ -13,6 +13,9 @@ h1 {
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
     0px -5px 35px rgba(255, 255, 255, 0.3);
 }
+.App {
+  width: 100%;
+}
 
 .pii {
   text-align: center;
@@ -88,4 +91,48 @@ h1 {
 
 .search:focus {
   outline: none;
+}
+
+/* 1168PX */
+@media screen and (max-width: 1168px) {
+  .search {
+    width: 150px;
+  }
+  .App {
+    width: 100%;
+  }
+  .pii-items {
+    width: 800px;
+    font-size: 20px;
+  }
+}
+
+/* 768PX */
+@media screen and (max-width: 768px) {
+  .input-flex {
+    flex-direction: column;
+  }
+  .search {
+    width: 300px;
+  }
+  .App {
+    width: 100%;
+  }
+  .pii-items {
+    flex-direction: column;
+    width: 400px;
+    font-size: 40px;
+  }
+}
+/* 540PX */
+@media screen and (max-width: 540px) {
+  .pii-items {
+    flex-direction: column;
+    width: 200px;
+    font-size: 25px;
+  }
+
+  .search {
+    width: 175px;
+  }
 }
