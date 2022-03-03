@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Search from "./components/Search";
+import Search from "./components/BasicInfo";
 import "./App.css";
 
 class App extends Component {
   constructor(props) {
-    super();
+    super(props);
   }
   render() {
     return (
