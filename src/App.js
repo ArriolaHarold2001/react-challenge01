@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import BasicInfo from "./components/BasicInfo";
+import Search from "./components/Search";
 import "./App.css";
 
 class App extends Component {
@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <BasicInfo />
+        <Search />
       </>
     );
   }
