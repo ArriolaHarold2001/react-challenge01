@@ -39,7 +39,6 @@ const BasicInfo = ({ data }) => {
 
       <div className="App">
         <div className="pii">
-          {/* <div className="pii-items"> */}
           {Data.filter((posts) => {
             if (data.query === "") {
               return posts;
@@ -64,7 +63,6 @@ const BasicInfo = ({ data }) => {
           ))}
         </div>
       </div>
-      {/* </div> */}
     </>
   );
 };
