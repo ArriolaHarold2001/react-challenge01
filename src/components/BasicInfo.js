@@ -1,12 +1,11 @@
 import React from "react";
-import Data from "../data/basicData.json";
 
 const BasicInfo = ({ data }) => {
   return (
     <>
       <div className="App">
         <div className="pii">
-          {Data.filter((posts) => {
+          {data.Data.filter((posts) => {
             if (data.query === "") {
               console.log(data);
               console.log(data.query);
