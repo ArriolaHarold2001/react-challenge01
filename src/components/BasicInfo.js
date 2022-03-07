@@ -7,8 +7,6 @@ const BasicInfo = ({ data }) => {
         <div className="pii">
           {data.Data.filter((posts) => {
             if (data.query === "") {
-              console.log(data);
-              console.log(data.query);
               return posts;
             } else if (
               posts.firstName
@@ -18,7 +16,6 @@ const BasicInfo = ({ data }) => {
               posts.mobileNumber.includes(data.query) ||
               posts.birthday.toLowerCase().includes(data.query.toLowerCase())
             ) {
-              console.log(data.query);
               return posts;
             }
           }).map((posts, index) => (
